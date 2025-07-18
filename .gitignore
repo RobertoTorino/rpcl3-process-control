@@ -1,0 +1,8 @@
+/.idea/
+/build/rpcl3pcLocalBuild_*
+/new_builds/rpcl3pcLocalBuild_*
+/gh.txt
+/github_release.ps1
+/new_build.cmd
+/new_build.ps1
+/pc.log
