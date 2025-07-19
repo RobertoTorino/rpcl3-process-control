@@ -1,18 +1,8 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
-
-# Other files and folders
-.settings/
-
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+/.idea/
+/build/rpcl3pcLocalBuild_*
+/new_builds/rpcl3pcLocalBuild_*
+/gh.txt
+/github_release.ps1
+/new_build.cmd
+/new_build.ps1
+/pc.log
