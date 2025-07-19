@@ -3,7 +3,7 @@ RPCL3 Process Control - RPCL3PC
 Process Control Manager for RPCS3
 
 Instructions:
-Just extract the rpcl3pc.zip file to your rpcs3 folder.
+Just run the rpcl3pc.exe.
 
 Features:
 - Set process priority for rpcs3.exe.
