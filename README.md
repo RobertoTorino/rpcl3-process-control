@@ -12,3 +12,11 @@
 
 
 ![rpcl3pc.png](images/rpcl3pc.png)
+
+---
+
+![default_256.png](rpcl3_media/default_256.png)                   
+
+
+![github.png](images/github.png)                                      
+**[RobertoTorino](https://github.com/RobertoTorino)**                           
