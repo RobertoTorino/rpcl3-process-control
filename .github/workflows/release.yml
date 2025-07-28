@@ -33,7 +33,7 @@ jobs:
           $input       = "rpcl3pc.ahk"
           $output      = "rpcl3pc.exe"
           $icon        = "rpcl3_media\rpcl3_default.ico"
-          $zipName     = "rpcl3_release.zip"
+          $zipName     = "rpcl3pc_release.zip"
           $versionTxt  = "version.txt"
           $versionDat  = "version.dat"
           $extraAssets = @(
