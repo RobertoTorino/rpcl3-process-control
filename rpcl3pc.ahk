@@ -79,7 +79,7 @@ IniRead, muteSound, %iniFile%, MUTE_SOUND, Mute, 0
 
 ; ─── Start GUI. ───────────────────────────────────────────────────────────────────────────────────────────────────────
 title := "RPCS3 Process Priority - " . Chr(169) . " " . A_YYYY . " - Philip"
-Gui, Show, w670 h244, %title%
+Gui, Show, w650 h244, %title%
 Gui, +LastFound
 Gui, Font, s10 q5, Segoe UI
 Gui, Margin, 15, 15
@@ -87,23 +87,22 @@ GuiHwnd := WinExist()
 
 ; Priority section.
 Gui, Font, s10 q5, Segoe UI
-Gui, Add, GroupBox,                      x10 y5 w650 h180, RPCL3 Process Priority Manager
-Gui, Add, Text,                          x20 y35, Priority:
-Gui, Add, DropDownList, vPriorityChoice  x20 y59 w150 r6, Idle|Below Normal|Normal|Above Normal|High|Realtime
+Gui, Add, Text,                          x10 y10, Priority:
+Gui, Add, Text,                         x172 y10, Press the Escape button for a sound test or to quit rpcs3.
+Gui, Add, DropDownList, vPriorityChoice  x10 y34 w150 r6, Idle|Below Normal|Normal|Above Normal|High|Realtime
 LoadSettings()
-Gui, Add, Button, gSetPriority           x20 y95 w150 h75, SET PRIORITY
-Gui, Add, Button, gRunRPCS3             x180 y95 w150 h75, RUN RPCS3
-Gui, Add, Button, gRefreshPath          x340 y95 w150 h75, REFRESH PATH
-Gui, Add, Button, gSetRpcs3Path         x500 y95 w150 h75, SET PATH
-Gui, Add, Button, gToggleMute vMuteBtn  x180 y58 w150 h27 +Center +0x200, % (muteSound ? "UNMUTE" : "MUTE")
+Gui, Add, Button, gSetPriority           x10 y70 w150 h75, SET PRIORITY
+Gui, Add, Button, gRunRPCS3             x170 y70 w150 h75, RUN RPCS3
+Gui, Add, Button, gRefreshPath          x330 y70 w150 h75, REFRESH PATH
+Gui, Add, Button, gSetRpcs3Path         x490 y70 w150 h75, SET PATH
+Gui, Add, Button, gToggleMute vMuteBtn  x170 y34 w150 h27 +Center +0x200, % (muteSound ? "UNMUTE" : "MUTE")
 defaultIcon := A_Temp . "\DEFAULT_256.PNG"
 if FileExist(defaultIcon) {
-    Gui, Add, Picture, x580 y22 w65 h65 vRPCL3Icon, %defaultIcon%
+    Gui, Add, Picture, x575 y2 w65 h65 vRPCL3Icon, %defaultIcon%
 }
-Gui, Add, Text,                         x342 y66, Press the Escape button to quit rpcs3.
 
 ; ─── Custom status bar, 1 is used for RPCS3 status, use 2 and 3. ──────────────────────────────────────────────────────
-Gui, Add, GroupBox,                   x0 y190 w670 h33
+Gui, Add, GroupBox,                   x0 y190 w650 h33
 Gui, Add, Text, vCurrentPriority      x6 y202 w150,
 
 ; ─── Bottom statusbar, 1 is reserved for process priority status, use 2. ──────────────────────────────────────────────
