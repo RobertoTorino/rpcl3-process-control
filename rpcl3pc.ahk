@@ -70,7 +70,7 @@ if A_Args[1] = "activate" {
 ; AutoHotkey portion to embed assets
 FileInstall, rpcl3_media\RPCL3_GOOD_MORNING.wav, %A_Temp%\RPCL3_GOOD_MORNING.wav
 FileInstall, rpcl3_media\RPCL3_GAME_OVER.wav, %A_Temp%\RPCL3_GAME_OVER.wav
-FileInstall, rpcl3_media\default_256.png, %A_Temp%\default_256.png
+FileInstall, rpcl3_media\DEFAULT_256.PNG, %A_Temp%\DEFAULT_256.PNG
 FileInstall, pc.ini, %A_Temp%\pc.ini
 
 ; ─── Sound settings at startup. ───────────────────────────────────────────────────────────────────────────────────────
@@ -96,7 +96,7 @@ Gui, Add, Button, gRunRPCS3             x180 y95 w150 h75, RUN RPCS3
 Gui, Add, Button, gRefreshPath          x340 y95 w150 h75, REFRESH PATH
 Gui, Add, Button, gSetRpcs3Path         x500 y95 w150 h75, SET PATH
 Gui, Add, Button, gToggleMute vMuteBtn  x180 y58 w150 h27 +Center +0x200, % (muteSound ? "UNMUTE" : "MUTE")
-defaultIcon := A_Temp . "\default_256.png"
+defaultIcon := A_Temp . "\DEFAULT_256.PNG"
 if FileExist(defaultIcon) {
     Gui, Add, Picture, x580 y22 w65 h65 vRPCL3Icon, %defaultIcon%
 }

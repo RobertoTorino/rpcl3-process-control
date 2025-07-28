@@ -15,7 +15,7 @@
 
 ---
 
-![default_256.png](rpcl3_media/default_256.png)                   
+![DEFAULT_256.PNG](rpcl3_media/DEFAULT_256.PNG)                   
 
 
 ![github.png](images/github.png)                                      
